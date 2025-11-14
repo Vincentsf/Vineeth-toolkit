@@ -1,0 +1,21 @@
+#!/bin/bash
+
+echo "Hi I am a mac alteration tool where I am here to change your mac";
+
+sudo ifconfig eth0 down;
+
+echo "Enter the mac new address that you want the system to alter:";
+
+read macaddress;
+
+sudo ifconfig hw ether $macaddress;
+
+sudo ifconfig eth0 up;
+
+echo "Your mac address has been successfully altered to:($macaddress). ";
+
+ifconfig
+
+sleep 20
+
+clear
