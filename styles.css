@@ -1,0 +1,131 @@
+:root {
+  --bg: #f8fafc;
+  --text: #0f172a;
+  --primary: #2563eb;
+  --accent: #8b5cf6;
+  --card: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+.hero {
+  background: linear-gradient(135deg, #1d4ed8, #7c3aed);
+  color: #fff;
+  padding: 1.5rem 1.5rem 4rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav h1 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero-content {
+  max-width: 720px;
+  margin-top: 2rem;
+}
+
+.hero-content h2 {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  margin-bottom: 0.5rem;
+}
+
+.badge {
+  background: rgba(255, 255, 255, 0.2);
+  width: fit-content;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+#explore-btn {
+  margin-top: 1rem;
+  border: none;
+  border-radius: 0.7rem;
+  padding: 0.8rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #1e1b4b;
+}
+
+.section {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 3rem 1.25rem;
+}
+
+.alt {
+  background: #eef2ff;
+  border-radius: 1rem;
+}
+
+.cards {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card {
+  background: var(--card);
+  border-radius: 0.8rem;
+  padding: 1rem;
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
+}
+
+.pathways {
+  padding-left: 1.2rem;
+}
+
+.chatbot-shell {
+  margin-top: 1rem;
+  border: 2px dashed #94a3b8;
+  border-radius: 0.8rem;
+  padding: 1rem;
+  background: #f1f5f9;
+}
+
+.chatbot-title {
+  margin: 0;
+  font-weight: 700;
+}
+
+.chatbot-subtitle {
+  margin: 0.2rem 0 0;
+  color: #334155;
+}
+
+footer {
+  text-align: center;
+  padding: 1.2rem;
+  color: #334155;
+}
